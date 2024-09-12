@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         exit();
     }
 } else {
-    header("Location: stafflogin.php"); // Redirect if accessed directly
+    header("Location: index.php"); // Redirect if accessed directly
     exit();
 }
 ?>

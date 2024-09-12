@@ -5,7 +5,7 @@ include 'dbmanager.php';
 // Check if the user is logged in
 if (!isset($_SESSION['adminusername'])) {
     // Redirect to login page if not logged in
-    header("Location: stafflogin.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -103,7 +103,7 @@ $customerResult = $conn->query($customerQuery);
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="stafflogin.php">
+              <a class="dropdown-item d-flex align-items-center" href="index.php">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -219,7 +219,7 @@ $customerResult = $conn->query($customerQuery);
       </li><!-- End Register Page Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="stafflogin.php">
+        <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-box-arrow-in-right"></i>
           <span>Login</span>
         </a>

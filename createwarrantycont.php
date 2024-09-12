@@ -5,7 +5,7 @@ include 'dbmanager.php';
 // Check if the user is logged in
 if (!isset($_SESSION['adminusername'])) {
     // Redirect to login page if not logged in
-    header("Location: stafflogin.php");
+    header("Location: index.php");
     exit();
 }
 

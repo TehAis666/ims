@@ -4,7 +4,7 @@ include 'dbmanager.php'; // Include the database connection file
 
 // Check if the user is logged in (if required)
 if (!isset($_SESSION['adminusername'])) {
-    header("Location: stafflogin.php");
+    header("Location: index.php");
     exit();
 }
 
